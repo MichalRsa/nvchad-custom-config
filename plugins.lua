@@ -37,6 +37,10 @@ local plugins = {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },
+  {
+    "L3MON4D3/LuaSnip",
+    opts = overrides.luasnip,
+  },
 
   -- Install a plugin
   {

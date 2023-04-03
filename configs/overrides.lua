@@ -7,9 +7,12 @@ M.treesitter = {
     "html",
     "css",
     "javascript",
+    "typescript",
+    "tsx",
     "c",
     "markdown",
     "markdown_inline",
+    "astro",
   },
   indent = {
     enable = true,
@@ -44,6 +47,7 @@ M.treesitter = {
       "xml",
       "php",
       "markdown",
+      "astro",
     },
   },
 }
@@ -77,6 +81,13 @@ M.nvimtree = {
       },
     },
   },
+}
+
+local luasnip = require "luasnip"
+M.luasnip = {
+  luasnip.filetype_extend("typescript", { "javascript" }),
+  luasnip.filetype_extend("javascript", { "javascriptreact" }),
+  luasnip.filetype_extend("astro", { "javascript", "javascriptreact" }),
 }
 
 return M
