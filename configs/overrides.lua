@@ -86,6 +86,7 @@ M.nvimtree = {
 local luasnip = require "luasnip"
 M.luasnip = {
   luasnip.filetype_extend("typescript", { "javascript" }),
+  luasnip.filetype_extend("typescriptreact", { "javascript", "javascriptreact" }),
   luasnip.filetype_extend("javascript", { "javascriptreact" }),
   luasnip.filetype_extend("astro", { "javascript", "javascriptreact" }),
 }
